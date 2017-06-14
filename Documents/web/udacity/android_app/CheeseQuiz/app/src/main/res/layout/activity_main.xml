@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Check Question 1"
+                android:text="@string/btn_ckeck_q1"
                 android:onClick="checkQuestionOne" />
         </LinearLayout>
 
@@ -125,7 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Check Question 2"
+                android:text="@string/btn_ckeck_q2"
                 android:onClick="checkQuestionTwo" />
 
         </LinearLayout>
@@ -139,7 +139,7 @@
             android:layout_marginTop="20dp">
 
             <TextView
-                android:id="@+id/question2"
+                android:id="@+id/question3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -149,26 +149,26 @@
                 android:textSize="16sp" />
 
             <RadioGroup
-                android:id="@+id/radioGroupQuestion2"
+                android:id="@+id/radioGroupQuestion3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/radioButton2_1"
+                    android:id="@+id/radioButton3_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
                     android:text="USA" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2_2"
+                    android:id="@+id/radioButton3_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
                     android:text="France" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2_3"
+                    android:id="@+id/radioButton3_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
@@ -176,11 +176,11 @@
             </RadioGroup>
 
             <Button
-                android:id="@+id/button_check_Q2"
+                android:id="@+id/button_check_Q3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Check Question 2"
+                android:text="@string/btn_ckeck_q3"
                 android:onClick="checkQuestionThree" />
 
         </LinearLayout>
