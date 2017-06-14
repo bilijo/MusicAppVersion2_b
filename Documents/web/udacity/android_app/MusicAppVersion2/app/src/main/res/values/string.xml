@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Simple Music App</string>
+
+    <string name="main_menu_comment"><b>MUSIC GENRE MENU</b>\n
+            Here is the main menu of the app with music genre files provided in the
+        music directory of the user\'s device. To access to these files we could use an URI with
+        the <b>MediaStore.Audio.Media</b> class with <b>getContentUri</b> method.\n
+        The user will download his own audio files in a dedicated folder.
+            We use explicit intents to call each listed genre categories</string>
+    <string name="artist_list_comment"><b>ARTISTS LIST PER GENRE</b>\n
+        Here we can choose between some artists which belongs to
+the selected  music genre. Each item are selectable and trigger an explicit intent
+ which open the artist\'s song list activity</string>
+    <string name="song_list_comment"><b>SONG LIST FROM SELECTED ARTIST CATEGORY</b>\n
+        Here we can choose between some song music. Each item are selectable and trigger an explicit intent
+ which open the play song activity </string>
+    <string name="play_song_comment"><b>SONGS FROM SELECTED ARTIST LIST</b>\n
+        Here we can play the song selected in the previous list of songs. The track will be managed by using <b>MediaPlayer</b>
+    API with play(), pause() and stop() methods</string>
+
+    <string name="main_btClassisc_text">"Classic"</string>
+    <string name="main_btjazz_text">"Jazz"</string>
+    <string name="main_btpop_text">"Pop"</string>
+
+    <string name="song_name">"track"</string>
+    <string name="song_list_button">"To song list"</string>
+    <string name="play_screen_button">"To player song"</string>
+    <string name="next_button">"Next"</string>
+    <string name="back_button">Back</string>
+
+    <string name="noSong">"no Song selected"</string>
+    <string name="noArtist">"no Artist selected"</string>
+
+</resources>

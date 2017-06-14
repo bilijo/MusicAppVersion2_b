@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BusinessStore</string>
+    <string name="store_name">DUPLIREX PAPETERIE</string>
+    <string name="email_name">contact@papeterie.com</string>
+    <string name="phone_number">Phone : 780&#8211;999&#8211;001</string>
+    <string name="description">It\'s a wide range of products waiting
+        for you in our paper mills and boutiques. We look forward to your visit</string>
+    <string name="open_hours">Opening Hours :
+    Mon. to Fri. 08h00 – 12h00 13h30 – 18h00
+    On Sat. 09h00 – 12h00 13h00 – 16h00 </string>
+</resources>
