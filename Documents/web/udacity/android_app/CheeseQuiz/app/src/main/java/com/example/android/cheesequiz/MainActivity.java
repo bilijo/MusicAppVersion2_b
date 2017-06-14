@@ -3,11 +3,14 @@ package com.example.android.cheesequiz;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
+import java.security.acl.Group;
 import java.util.ArrayList;
 
 import static com.example.android.cheesequiz.R.id.radioGroupQuestion1;
@@ -47,14 +50,17 @@ public class MainActivity extends AppCompatActivity {
                     Log.v("MainActivity", "checkQuestionOne: " + data);
 
                 } else {
-                    Log.v("MainActivity", "Nothing selected from Radio Group.");
-
+                    //Toast.setGravity(Gravity.TOP|Gravity.START, 0, 0);
+                    Toast.makeText(MainActivity.this, "Nothing selected from Radio Group.",
+                            Toast.LENGTH_LONG).show();
                 }
+
             }
         });
         //******************************************************
     }
-
 }
+
+
 
 
