@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.cheesequiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/text_introduction"
+            android:layout_marginBottom="@dimen/text_introduction_margin_bottom" />
+
+        <!-- Question number 1   -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="7dp"
+            android:id="@+id/linearLayout1">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:text="@string/text_question1" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/reponse1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="360" />
+
+                <RadioButton
+                    android:id="@+id/reponse1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="808" />
+
+                <RadioButton
+                    android:id="@+id/reponse1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="1200" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_check_Q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Check Question 1"
+                android:onClick="checkQuestionOne" />
+        </LinearLayout>
+
+        <!-- Question number 2   -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/text_question2"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="USA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="France" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="Switzerland" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_check_Q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Check Question 2"
+                android:onClick="checkQuestionTwo" />
+
+        </LinearLayout>
+
+        <!-- Question number 3   -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/text_question3"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="USA" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="France" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"
+                    android:text="Switzerland" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_check_Q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Check Question 2"
+                android:onClick="checkQuestionThree" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
