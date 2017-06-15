@@ -181,5 +181,12 @@
                 android:text="@string/btn_ckeck_q3" />
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/button_final_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_final_result" />
+
     </LinearLayout>
 </ScrollView>

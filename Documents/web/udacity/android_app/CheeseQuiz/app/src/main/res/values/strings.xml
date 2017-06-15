@@ -23,4 +23,11 @@
     <string name="Q4_response1">France</string>
     <string name="Q4_response2">Germany</string>
     <string name="Q4_response3">Switzerland</string>
+
+    <string name="btn_ckeck_q1">Check question1</string>
+    <string name="btn_ckeck_q2">Check question2</string>
+    <string name="btn_ckeck_q3">Check question3</string>
+    <string name="btn_final_result">Result</string>
+
+
 </resources>
