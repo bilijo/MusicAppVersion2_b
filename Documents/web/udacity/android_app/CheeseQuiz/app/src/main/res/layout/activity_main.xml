@@ -49,21 +49,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
-                    android:text="360" />
+                    android:text="@string/Q1_response1" />
 
                 <RadioButton
                     android:id="@+id/reponse1_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
-                    android:text="808" />
+                    android:text="@string/Q1_response2" />
 
                 <RadioButton
                     android:id="@+id/reponse1_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
-                    android:text="1200" />
+                    android:text="@string/Q1_response3" />
             </RadioGroup>
 
             <Button
@@ -71,11 +71,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/btn_ckeck_q1"
-                android:onClick="checkQuestionOne" />
+                android:text="@string/btn_ckeck_q1" />
         </LinearLayout>
 
-        <!-- Question number 2   -->
+        <!-- Question number 2  -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,21 +102,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
-                    android:text="USA" />
+                    android:text="@string/Q2_response1" />
 
                 <RadioButton
                     android:id="@+id/radioButton2_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
-                    android:text="France" />
+                    android:text="@string/Q2_response2" />
 
                 <RadioButton
                     android:id="@+id/radioButton2_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
-                    android:text="Switzerland" />
+                    android:text="@string/Q3_response3" />
             </RadioGroup>
 
             <Button
@@ -125,12 +124,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/btn_ckeck_q2"
-                android:onClick="checkQuestionTwo" />
+                android:text="@string/btn_ckeck_q2" />
 
         </LinearLayout>
 
-        <!-- Question number 3   -->
+        <!-- Question number 3  -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -158,21 +156,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
-                    android:text="USA" />
+                    android:text="@string/Q3_response1" />
 
                 <RadioButton
                     android:id="@+id/radioButton3_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
-                    android:text="France" />
+                    android:text="@string/Q3_response2" />
 
                 <RadioButton
                     android:id="@+id/radioButton3_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.75"
-                    android:text="Switzerland" />
+                    android:text="@string/Q3_response3" />
             </RadioGroup>
 
             <Button
@@ -180,8 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/btn_ckeck_q3"
-                android:onClick="checkQuestionThree" />
+                android:text="@string/btn_ckeck_q3" />
 
         </LinearLayout>
     </LinearLayout>
