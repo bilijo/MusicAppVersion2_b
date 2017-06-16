@@ -2,6 +2,7 @@ package com.example.android.cheesequiz;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.SupportActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
@@ -15,13 +16,22 @@ import java.util.Objects;
 
 public class ResultOfQuizz extends AppCompatActivity {
     final ArrayList<String> arrayListTrueAnswers = new ArrayList<>(5);
-    arrayListTrueAnswers.add("1200")
-    //arrayListTrueAnswers.add("France");
+
+ public String getArrayItem(int position){
+     String toto = arrayListTrueAnswers[position];
+     return toto;
+ }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
+
+        arrayListTrueAnswers.add("1200");
+        arrayListTrueAnswers.add("France");
+        arrayListTrueAnswers.add("Cow");
+        arrayListTrueAnswers.add("Goat");
+        arrayListTrueAnswers.add("Sheep");
 
         // get players quizz responses stored in an  Arraylist via intent from mainActivity
         Intent recupIntent = getIntent();
