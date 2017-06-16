@@ -2,7 +2,6 @@ package com.example.android.cheesequiz;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.SupportActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
@@ -17,9 +16,9 @@ import java.util.Objects;
 public class ResultOfQuizz extends AppCompatActivity {
     final ArrayList<String> arrayListTrueAnswers = new ArrayList<>(5);
 
- public String getArrayItem(int position){
+ public int getArrayItem(int position){
      //String toto = arrayListTrueAnswers(position);
-     //return toto;
+     return position;
  }
 
     @Override
@@ -36,6 +35,8 @@ public class ResultOfQuizz extends AppCompatActivity {
         // get players quizz responses stored in an  Arraylist via intent from mainActivity
         Intent recupIntent = getIntent();
         ArrayList<String> vArrayList = recupIntent.getStringArrayListExtra("IntentArraylist");
+        String goodAnswers = recupIntent.getStringExtra("rightAnswers");
+
         Log.d("ResultOfQuizz", "IntentArraylist" + vArrayList);
 
         //compare arraylist of responses -->vArrayList-->arrayListStoreAnswers
@@ -53,7 +54,7 @@ public class ResultOfQuizz extends AppCompatActivity {
             Log.d("ResultOfQuizz", "response" + match);
             if (!match) {
 
-                Toast.makeText(ResultOfQuizz.this, "responses matches solutions.",
+                Toast.makeText(ResultOfQuizz.this, "responses matches solutions."+goodAnswers,
                         Toast.LENGTH_LONG).show();
             }
         }

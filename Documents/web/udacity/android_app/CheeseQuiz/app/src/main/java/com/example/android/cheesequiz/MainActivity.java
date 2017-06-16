@@ -133,32 +133,23 @@ public class MainActivity extends AppCompatActivity {
                 //int selectedRadioButtonID ;
 
 
+                // Check which checkbox was clicked
+                if ((1,3 and 4 == true) &&(2 == false))
+                //  right answer
 
+                else
+                // wrong
 
-                    // Check which checkbox was clicked
-                    if (checkBox1.isChecked()) {
-                        rightAnswers++;
-                    }
-                    if (checkBox2.isChecked()) {
-                        wrongAnswers++;
-                    }
-                    if (checkBox3.isChecked()) {
-                        rightAnswers++;
-                    }
-                    if (checkBox4.isChecked()) {
-                        rightAnswers++;
-                    }
+                if (rightAnswers == 0 && wrongAnswers == 0) {
 
-                    Log.v("MainActivity", "rightAnswers: " + rightAnswers);
+                    //message if no checkboxes selected
+                    Toast.makeText(MainActivity.this, "Nothing selected from checkboxes.",
+                            Toast.LENGTH_LONG).show();
+                }
 
-
-
-                    String data = arrayListStoreAnswers.get(1);
-                    Log.v("MainActivity", "checkQuestionOne: " + data);
-
-
-
+                Log.v("MainActivity", "rightAnswers: " + rightAnswers);
             }
+
         });
         //******************************************************
 
@@ -172,7 +163,9 @@ public class MainActivity extends AppCompatActivity {
                 // send an intent to ResultOfQuizz class which will give results
                 Intent resultIntent = new Intent(MainActivity.this, ResultOfQuizz.class);
                 resultIntent.putStringArrayListExtra("IntentArraylist", arrayListStoreAnswers);
+
                 resultIntent.putExtra("IntentArraylist", arrayListStoreAnswers);
+                resultIntent.putExtra("rightAnswers", rightAnswers);
 
                 // launch ResultOfQuizz activity once button_final_result has been clicked
                 startActivity(resultIntent);
