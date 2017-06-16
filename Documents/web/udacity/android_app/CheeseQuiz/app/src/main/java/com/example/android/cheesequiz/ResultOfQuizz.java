@@ -18,8 +18,8 @@ public class ResultOfQuizz extends AppCompatActivity {
     final ArrayList<String> arrayListTrueAnswers = new ArrayList<>(5);
 
  public String getArrayItem(int position){
-     String toto = arrayListTrueAnswers[position];
-     return toto;
+     //String toto = arrayListTrueAnswers(position);
+     //return toto;
  }
 
     @Override

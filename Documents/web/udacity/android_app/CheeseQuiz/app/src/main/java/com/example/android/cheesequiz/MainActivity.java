@@ -130,13 +130,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Get the checked Radio Button ID from Radio Group
-                int selectedRadioButtonID = checkBox1. ();
+                //int selectedRadioButtonID ;
 
-                // If nothing is selected from Radio Group, then it return -1
-                if (selectedRadioButtonID != -1) {
 
-                    RadioButton selectedRadioButton = (RadioButton) findViewById(selectedRadioButtonID);
-                    String selectedRadioButtonText = selectedRadioButton.getText().toString();
 
 
                     // Check which checkbox was clicked
@@ -155,17 +151,12 @@ public class MainActivity extends AppCompatActivity {
 
                     Log.v("MainActivity", "rightAnswers: " + rightAnswers);
 
-                    // add the selected answer in the arraylist
-                    arrayListStoreAnswers.add(selectedRadioButtonText);
+
 
                     String data = arrayListStoreAnswers.get(1);
                     Log.v("MainActivity", "checkQuestionOne: " + data);
 
-                } else {
-                    //Toast.setGravity(Gravity.TOP|Gravity.START, 0, 0);
-                    Toast.makeText(MainActivity.this, "Nothing selected from Radio Group.",
-                            Toast.LENGTH_LONG).show();
-                }
+
 
             }
         });
