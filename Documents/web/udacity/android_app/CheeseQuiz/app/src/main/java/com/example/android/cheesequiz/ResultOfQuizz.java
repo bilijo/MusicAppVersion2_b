@@ -7,7 +7,6 @@ import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 /**
  * Created by dam on 15.06.2017.
@@ -15,11 +14,6 @@ import java.util.Objects;
 
 public class ResultOfQuizz extends AppCompatActivity {
     final ArrayList<String> arrayListTrueAnswers = new ArrayList<>(5);
-
- public int getArrayItem(int position){
-     //String toto = arrayListTrueAnswers(position);
-     return position;
- }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,30 +28,15 @@ public class ResultOfQuizz extends AppCompatActivity {
 
         // get players quizz responses stored in an  Arraylist via intent from mainActivity
         Intent recupIntent = getIntent();
-        ArrayList<String> vArrayList = recupIntent.getStringArrayListExtra("IntentArraylist");
-        String goodAnswers = recupIntent.getStringExtra("rightAnswers");
+       int sentinelles = recupIntent.getIntExtra("Sentinelles",-1);
+        int goodAnswers = recupIntent.getIntExtra("rightAnswers",-1);
 
-        Log.d("ResultOfQuizz", "IntentArraylist" + vArrayList);
-
-        //compare arraylist of responses -->vArrayList-->arrayListStoreAnswers
-        // with arraylist of right responses -->arrayListTrueAnswers
+        Log.d("ResultOfQuizz", "rightAnswers " + goodAnswers +" " + sentinelles);
 
 // Loop arrayList2 items
-        for (String response : vArrayList) {
-            // Loop arrayList1 items
-            boolean match = false;
-            for (String solution : arrayListTrueAnswers) {
-                if (Objects.equals(response, solution)) {
-                    match = true;
-                }
-            }
-            Log.d("ResultOfQuizz", "response" + match);
-            if (!match) {
 
-                Toast.makeText(ResultOfQuizz.this, "responses matches solutions."+goodAnswers,
+
+                Toast.makeText(ResultOfQuizz.this, "responses matches solutions."+goodAnswers+ " "+sentinelles,
                         Toast.LENGTH_LONG).show();
-            }
         }
-
-    }
 }

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">CheeseQuiz</string>
-    <string name="text_introduction">Answer some questions about\n the cheese world</string>
+    <string name="text_introduction">Answer some questions about the cheese world</string>
 
     <string name="text_question1">Q1 - How many different cheese exists in France ?</string>
     <string name="text_question2">Q2 - In which country is cheese most eaten ?</string>
